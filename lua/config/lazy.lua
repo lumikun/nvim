@@ -13,8 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup plugins directory
-require("lazy").setup({{import = "plugins"}})
+require("lazy").setup("plugins")
 
+--{import = "lazyvim.plugins.extras.coding.copilot" }
 -- Setup colorscheme
-vim.opt.termguicolors = true
-vim.cmd.colorscheme('dracula')
