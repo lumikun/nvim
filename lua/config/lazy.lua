@@ -12,6 +12,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- vim optr, temporary
+vim.g.mapleader = " "
+vim.wo.number = true
 -- Setup plugins directory
 require("lazy").setup("plugins")
 
